@@ -3,4 +3,4 @@ Gelişmiş resimli hg bb sistemi
 
 ❤️ Tasarım @araschain aittir.
 
-👉 Daha fazla altyapı için discord.gg/altyapılar
+👉 Daha fazla altyapı için Star
