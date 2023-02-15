@@ -57,14 +57,6 @@ client.on('interactionCreate', async (interaction) => {
     let channel = interaction.values[0]
         wixua.set(`hgbb_${interaction.guild.id}`, channel)
 
-        const row1 = new ActionRowBuilder()
-        .addComponents(
-            new ButtonBuilder()
-                .setEmoji("<:icon_settings:1074653831851417671>")
-                .setStyle(2)
-                .setCustomId("ayarlar2")
-        )
-
 
         let data = wixua.get(`hgbb_${interaction.guild.id}`)
         if(!data) return interaction.reply({content: "Bir hata oluştu", ephemeral: true })
@@ -74,6 +66,6 @@ client.on('interactionCreate', async (interaction) => {
           .setFooter({ text: "Sistemi sıfırlamak için /hoşgeldin-sistemi-sıfırla komudunu kullanabilirsin!" })
 
 
-        return interaction.update({ content: "", embeds: [sistem_kapali], components: [row1] })
+        return interaction.update({ content: "", embeds: [sistem_kapali], components: [] })
   }
 })
