@@ -22,7 +22,7 @@ module.exports = {
             interaction.reply({embeds: [embed], components: [row2]})
 
 const hgbb = wixua.fetch(`hgbb_`+interaction.guild.id)
-//dur unuttum amk sorry //bu neden inmiyo lan :D
+
 if(hgbb) {
     const channel = await interaction.guild.channels.cache.find(channel => channel.id === hgbb);
 
